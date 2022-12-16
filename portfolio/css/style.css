@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+  --brand-font: 'Comforter Brush', cursive;
+  --web-font: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--web-font);
+}
+
+nav {
+  padding: 20px 20px;
+  font-size: 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 1px 1px 2px lightgray;
+  background-color: black;
+  color: white;
+}
+
+.navbar-brand {
+  font-family: var(--brand-font)
+
+}
+.navbar-menu {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  
+}
+
+.navbar-menu__show {
+  position: absolute;
+  color: black;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  top: 70px;
+  right: 0;
+  padding: 10px 20px;
+}
+
+.navbar-menu__show > p {
+  font-size: 15px;
+}
+
+.navbar-menu__show > p:hover {
+  color: blue;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+
+.introduction {
+  padding: 30px 20px;
+  text-align: center;
+}
+.introduction > h1 {
+  padding: 20px 0 5px 0;
+  font-size: 23px;
+}
+
+.introduction > h2 {
+  font-size: 18px;
+  color: rgb(105, 103, 103);
+  padding-bottom: 20px;
+}
+
+.introduction > p {
+  font-size: 15px;
+}
+.profile-picture {
+  border-radius: 50%;
+}
+
+#closeButton {
+  align-self: flex-end;
+  padding-bottom: -50px;
+}
+
+.github,
+.linkedin {
+  margin: 20px 5px;
+  height: 20px;
+}
+/* Tablet */
+@media (min-width: 500px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+  body {
+    background-color: blue;
+  }
+}
